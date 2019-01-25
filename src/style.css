@@ -1,0 +1,57 @@
+/*body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:14px; color:#ffffff; font-weight: 400;line-height: 24px; background:black}
+.vertical_line{height:120px; width:1px;background:#fff;
+}
+body, html { height: 100%; -moz-osx-font-smoothing: grayscale;}*/
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -.1rem; 
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+.bird-box {
+    height: 600px;
+    position: relative;
+    background: url(images/bird-bg.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.content {
+    height: 400px;
+}
+.logo {
+    height: 100px;
+    width: 100%;
+    background-image: url(images/black-bird-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+.fore-bird {
+    background-color: transparantize(pink, 0.5);
+    background-image: url(images/fore-bird.png);
+    height: 733px;
+    width: 960px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top: 380px;
+}
+.back-bird {
+    width: 960px;
+    height: 298px;
+    background-image: url(images/back-bird.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 50%;;
+    margin-left: -480px;
+}
