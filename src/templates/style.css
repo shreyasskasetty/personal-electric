@@ -1,29 +1,21 @@
 body{
     background:black;
 }
-.parallax {
-  background-image: url("car.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    opacity: 0.4;
-    padding-bottom: 300px;
-}
-.column {
-  float: left;
-  width: 33.33%;
-}
-div img{
-    opacity: 0.7;
+.divider {
+    height:50px;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1 {
+	background: url('/assets/example/bg_blueplane.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
 }
 .overlay {
   position: absolute;
@@ -31,23 +23,37 @@ div img{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 500px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #010101;
+  background-color: #101010;
 }
 
-.column:hover .overlay {
+.col-md-4:hover .overlay {
   opacity: 1;
 }
 
 .text {
   color: white;
-  font-size: 50px;
+  font-size: 3vw;
   position: absolute;
-  top: 50%;
-  left: 50%;
+    top:50%;
+    font-family: sans-serif;
+    right: 38%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.bg-2 {
+	background: url('/assets/example/bg_suburb.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('/assets/example/bg_blueplane.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+
